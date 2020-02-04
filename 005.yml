@@ -17,11 +17,12 @@ question: |-
 
 
     Which of the following is the correct outcome of the SQL query below?
-    Query: SELECT name, cid FROM student, enrolled WHERE student.sid = enrolled.sid AND enrolled.grade = 'C'
+    Query: SELECT student.name, enrolled.grade FROM student, enrolled WHERE student.sid = enrolled.sid AND enrolled.cid = '15-415' AND enrolled.grade IN ('A', 'B')
 
 answers:
-  - Returns the name of all students and their corresponding course ids
-  - Returns the name of students and their corresponding course id where they have received grade C
+  - Returns the name, grade of the students who took course ’15-415′ and got a grade’ A’ or ‘B’ in that course
+  - Returns the name, grade of the students who took the course ’15-415′ but didn’t get grade ‘A’ or ‘B’ in that course
   - Error
   - None of these
-correct: B
+correct: A
+

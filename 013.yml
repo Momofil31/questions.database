@@ -1,0 +1,9 @@
+---
+question: Which of the following command(s) is /  are related to transaction control in SQL?
+answers:
+  - ROLLBACK
+  - COMMIT
+  - SAVEPOINT
+  - All of the above
+
+correct: D

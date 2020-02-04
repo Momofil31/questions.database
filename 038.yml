@@ -1,0 +1,14 @@
+---
+question: |-
+  Which of the following option is correct about following queries?
+
+  Query 1. SELECT emp.id, department.id FROM emp NATURAL JOIN department
+  Query 2. SELECT emp.id, department.id FROM department NATURAL JOIN emp
+
+answers:
+  - Both queries will give same outputs
+  - Both queries will give different output
+  - Need table structure
+  - None of these
+
+correct: A

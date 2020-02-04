@@ -1,0 +1,16 @@
+---
+question: |-
+  What is true about relation (table) in different normal forms (1NF, 2NF, 3NF)?
+
+  1- If a relation satisfies the conditions of 1NF. It will automatically satisfy the conditions of 2NF
+  2- If a relation satisfies the conditions of 2NF. It will automatically satisfy the conditions of 1NF
+  3- If a relation satisfies the conditions of 3NF. It will automatically satisfy the conditions of 1NF
+  4- If a relation satisfies the conditions of 2NF. It will automatically satisfy the conditions of 3NF
+  
+  Select the correct option:
+answers:
+  - 1 and 2
+  - 2 and 3
+  - 1 and 3
+  - 2 and 4
+correct: B

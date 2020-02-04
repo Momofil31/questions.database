@@ -1,0 +1,7 @@
+---
+question: Is “SELECT” operation in SQL equivalent to “PROJECT” operation in relational algebra?
+
+answers:
+  - Yes, both are equivalent in all the cases
+  - No, both are not equivalent
+correct: B

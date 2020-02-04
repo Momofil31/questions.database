@@ -1,0 +1,25 @@
+---
+question: |-
+  Suppose you are given a table/relation “EMPLOYEE” which has two columns (‘Name’ and ‘Salary’). The Salary column in this table has some NULL values. Now, I want to find out the records which have null values.
+  
+  Name   | Salary
+  ---------------
+  Saurav | NULL
+  Ankit  | 1000
+  Faizan | 2000
+  Sunil  | 3000
+  Kunal  | 4000
+
+
+  What will be the output for the following queries?
+
+  Query 1. SELECT * FROM EMPLOYEE WHERE Salary <> NULL;
+
+  Query 2. SELECT * FROM EMPLOYEE WHERE Salary = NULL;
+
+answers:
+  - Query 1 will give last 4 rows as output (excluding null value)
+  - Query 2 will give first row as output (only record containing null value)
+  - Query 1 and Query 2 both will give the same result
+  - Can’t say
+correct: C

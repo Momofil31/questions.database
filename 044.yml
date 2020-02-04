@@ -1,0 +1,35 @@
+---
+question: |-
+  Suppose you are given a table ‘words’. The table has 2 columns ‘id’ and ‘word’.
+
+  Id | Word
+  ---------
+  1  | My
+  2  | Name
+  3  | Is
+  4  | Ankit
+  5  | Gupta
+  6  | I
+  7  | Love
+  8  | Solving
+  9  | Data
+  10 | Mining
+  11 | Problems
+
+  What will be the output for the below query?
+
+  Query:  select c1, c2, c3 from ( select id,  lag(word) over (order by id) as c1, word as c2, lead(word) over (order by id) as c3 from words ) as t where c2 = ‘Mining’ or c2 = ‘Problems’;
+answers:
+  - c1     | c2       | c3
+    ----------------------------
+    Data   | Mining   | Problems
+    Mining | Problems |
+
+  - Error
+
+  - c1     | c2       | c3
+    ----------------------------
+    Data   | Mining   | Problems
+
+  - None of these
+correct: A

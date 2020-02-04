@@ -1,0 +1,17 @@
+---
+question: |-
+  Tables A, B have three columns (namely: ‘id’, ‘age’, ‘name’) each. These tables have no ‘null’ values and there are 100 records in each of the table.
+
+  Here are two queries based on these two tables ‘A’ and ‘B’:
+
+  Query1: SELECT A.id FROM A WHERE A.age > ALL (SELECT B.age FROM B WHERE B.name = 'Ankit')
+  Query2: SELECT A.id FROM A WHERE A.age > ANY (SELECT B.age FROM B WHERE B.name = 'Ankit')
+
+  Now, which of the following statement is correct for the output of each query?
+
+answers:
+  - The number of tuples in the output of Query 1 will be more than or equal to the output of Query 2
+  - The number of tuples in the output of Query 1 will be equal to the output of Query 2
+  - The number of tuples in the output Query 1 will be less than or equal to the output of Query 2
+  - Can’t say
+correct: C

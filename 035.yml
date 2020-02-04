@@ -1,0 +1,24 @@
+---
+question: |-
+  What will be the output for the below Query 1 and Query 2?
+
+  Query 1: SELECT MAX(Salary) FROM AV1 WHERE Salary < (SELECT MAX(Salary) from AV1);
+  Query 2: WITH S AS (SELECT Salary, ROW_NUMBER() OVER(ORDER BY Salary DESC) AS RowNum FROM AV1) SELECT Salary FROM S WHERE RowNum = 2;
+
+  Name   | Salary |	Company | Designation
+  -------------------------------------------------
+  Saurav | 1000	  | AVl     | Junior Data Scientist
+  Ankit	 | 800	  | AV1     | Data Scientist
+  Sunil	 | 1200	  | AV2     | Senior Manager
+  Kunal	 | 1400	  | AV2     | CEO
+  Deepak | 1100	  | AV3     | Data Entry Operator
+  Swati	 | 1200	  | AV3     | BOE
+  Faizan | 900	  | AV1     | Deep Learning Expert
+
+answers:
+  - Query 1 output = 1200 and Query 2 output =1200
+  - Query 1 output = 1200 and Query 2 output =1400
+  - Query 1 output = 1400 and Query 2 output =1200
+  - Query 1 output = 1400 and Query 2 output =1400
+
+correct: A

@@ -1,0 +1,30 @@
+---
+question: |-
+  STUDENT
+      Sid	  | name	 | login | age | gpa
+      53666	| Kayne	 | A@c   | 28	 | 4.0
+      53655	| Tupac	 | B@c   | 26	 | 3.5
+      53688	| Bieber | C@c   | 22	 | 3.9
+
+
+  ENROLLED
+      Sid	  | cid	   |grade
+      53666	| 15-415 | 	C
+      53688	| 15-721 |	A
+      53688	| 15-826 |	B
+      53655	| 15-415 |	C
+      53666	| 15-721 |	C
+
+
+    Which of the following query will find all the unique students who have taken more than one course?
+
+answers:
+  - SELECT DISTINCT e1.sid FROM enrolled AS e1, enrolled AS e2 WHERE e1.sid != e2.sid AND e1.cid != e2.cid
+
+  - SELECT DISTINCT e1.sid FROM enrolled AS e1, enrolled AS e2 WHERE e1.sid = e2.sid AND e1.cid = e2.cid
+
+  - SELECT DISTINCT e1.sid FROM enrolled AS e1, enrolled AS e2 WHERE e1.sid != e2.sid AND e1.cid != e2.cid
+
+  - SELECT DISTINCT e1.sid FROM enrolled AS e1, enrolled AS e2 WHERE e1.sid = e2.sid AND e1.cid != e2.cid
+
+correct: D

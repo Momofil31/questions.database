@@ -1,0 +1,30 @@
+---
+question: |-
+  STUDENT
+      Sid	  | name	 | login | age | gpa
+      53666	| Kayne	 | A@c   | 28	 | 4.0
+      53655	| Tupac	 | B@c   | 26	 | 3.5
+      53688	| Bieber | C@c   | 22	 | 3.9
+
+
+  ENROLLED
+      Sid	  | cid	   |grade
+      53666	| 15-415 | 	C
+      53688	| 15-721 |	A
+      53688	| 15-826 |	B
+      53655	| 15-415 |	C
+      53666	| 15-721 |	C
+
+
+    WWhich of the following query(s) will result in a successful insertion of a record in the STUDENT table?
+
+    Query1: INSERT INTO student (sid, name, login, age, gpa) VALUES (53888, ‘Drake’, ‘drake@cs’, 29, 3.5)
+    Query2: INSERT INTO student VALUES (53888, ‘Drake’, ‘drake@cs’, 29, 3.5)
+
+answers:
+- Both queries will insert the record successfully
+- Query 1 will insert the record successfully and Query 2 will not
+- Query 2 will insert the record successfully and Query 1 will not
+- Both queries will not be able to insert the record successfully
+
+correct: A

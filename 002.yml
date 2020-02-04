@@ -17,7 +17,7 @@ question: |-
 
 
     Which of the following is the correct outcome of the SQL query below?
-    "Query: SELECT cid FROM ENROLLED WHERE grade = 'C'"
+    Query: SELECT cid FROM ENROLLED WHERE grade = 'C'
 
 answers:
     - Extract the course ids(cid) where student receive the grade C in the course

@@ -1,0 +1,34 @@
+---
+question: |-
+  STUDENT
+      Sid	  | name	 | login | age | gpa
+      53666	| Kayne	 | A@c   | 28	 | 4.0
+      53655	| Tupac	 | B@c   | 26	 | 3.5
+      53688	| Bieber | C@c   | 22	 | 3.9
+
+
+  ENROLLED
+      Sid	  | cid	   |grade
+      53666	| 15-415 | 	C
+      53688	| 15-721 |	A
+      53688	| 15-826 |	B
+      53655	| 15-415 |	C
+      53666	| 15-721 |	C
+
+
+    ‘Sid’ in “ENROLLED” table is ‘Foreign Key’ referenced by ‘Sid’ in “STUDENT” table. Now you want to insert a record into the ENROLLED table.
+
+    Which of the following option(s) will insert a row in ENROLLED table successfully?
+
+    1- INSERT INTO ENROLLED values(53667, '15-420', 'C');
+    2- INSERT INTO ENROLLED values(53666, '15-421', 'C');
+    3- INSERT INTO ENROLLED values(53667, '15-415', 'C');
+    4- INSERT INTO ENROLLED values(53666, '15-415', 'C');
+
+answers:
+- 1 and 3
+- Only 3
+- 2 and 4
+- Only 4
+
+correct: C

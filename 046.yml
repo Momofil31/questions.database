@@ -1,0 +1,36 @@
+---
+question: |-
+  Suppose I created a table called ‘avian’ using below SQL query:
+
+  Query : CREATE TABLE avian ( emp_id SERIAL PRIMARY KEY, name varchar);
+
+  Now, I want to insert some records in the table avian:
+
+  Query1: INSERT INTO avian (name) VALUES(‘FRAZY');
+
+  Query2: INSERT INTO avian (name) VALUES(‘ANKIT');
+
+  Query3: INSERT INTO avian (name) VALUES('SUNIL');
+
+  Query4: INSERT INTO avian (name) VALUES('SAURAV');
+
+  Which of the following will be the output of the below query?
+
+  Query: Select * FROM avian;
+answers:
+  - emp_id | name      
+    ---------------
+    1      | FRAZY
+    2      | ANKIT 
+    3      | SUNIL
+    4      | SAURAV 
+  - emp_id | name       
+    ---------------
+           | FRAZY
+           | ANKIT 
+           | SUNIL
+           | SAURAV 
+
+  - Error
+  - None of these
+correct: A

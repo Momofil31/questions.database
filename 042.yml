@@ -1,0 +1,25 @@
+---
+question: |-
+  Suppose you have a CSV file which has 3 columns (‘User_ID’, ‘Gender’, ‘product_ID’) and 7150884 rows. You have created a table “train” from this file in SQL.
+
+  Now, you run Query 1 (mentioned below):
+
+  Query1: EXPLAIN SELECT * from train WHERE product_ID like '%7085%';
+
+  Then, you created product_ID columns as an index in ‘train’ table using below SQL query:
+
+  CREATE INDEX product_ID ON train(Product_ID)
+
+  Suppose, you run Query 2 (same as Query 1) on train table.
+
+  Query 2: EXPLAIN SELECT * from train WHERE product_ID like '%7085%';
+
+  Let T1 and T2 be time taken by Query 1 and Query 2 respectively. Which query will take less time to execute?
+
+
+answers:
+  - T1>T2
+  - T2>T1
+  - T1~T2
+  - Can’t say
+correct: C

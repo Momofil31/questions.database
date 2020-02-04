@@ -1,0 +1,16 @@
+---
+question: |-
+  Which of the following are the synonyms for ‘column’ and ‘row’ of a table?
+
+  1- Row = [Tuple, Record]
+  2- Column = [Field, Attribute]
+  3- Row = [Tuple, Attribute]
+  4- Columns = [Field, Record]
+
+  Select the correct option:
+answers:
+  - 1 and 2
+  - 3 and 4
+  - Only 1
+  - Only 2
+correct: A

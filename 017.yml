@@ -1,0 +1,10 @@
+---
+question: Which of the following is true for TRUNCATE in SQL?
+
+answers:
+  - It is usually slower than DELETE command
+  - It is usually faster than DELETE command
+  - There is no comparison between DELETE & TRUNCATE
+  - Truncate command can be rolled back
+  - None of these
+correct: B

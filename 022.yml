@@ -1,0 +1,22 @@
+---
+question: |-
+  Identify, which of the following column “A” or “C” given in the below table is a “Primary Key” or “Foreign Key”?
+
+  A | C
+  -----
+  2 | 4
+  3 | 4
+  4 | 3
+  5 | 2
+  7 | 2
+  9 | 5
+  6 | 4
+
+  Note: We  have defined ‘Foreign Key’ and ‘Primary Key’ in a single table
+
+answers:
+  - Column ‘A’ is Foreign Key and Column ‘C’ is Primary Key’
+  - Column ‘C’ is Foreign Key and Column ‘A’ is ‘Primary Key’
+  - Both can be ‘Primary Key’
+  - Based on the above table, we cannot tell which column is ‘Primary Key’ and which is ‘Foreign Key’
+correct: B

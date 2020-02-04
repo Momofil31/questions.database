@@ -1,0 +1,17 @@
+---
+question: |-
+  Suppose you want to compare three keys (‘Primary Key’, ‘Super Key’ and ‘Candidate Key’) in a database. Which of the following option(s) is/are correct?
+
+  1 - Minimal super key is a candidate key
+  2 - Only one Candidate Key can be Primary Key
+  3 - All super keys can be a candidate key
+  4 - We cannot find “Primary Key” from “Candidate Key”
+  
+  Select the correct option:
+answers:
+  - 1 and 2
+  - 2 and 3
+  - 1 and 3
+  - 2 and 4
+  - 1, 2 and 3
+correct: A

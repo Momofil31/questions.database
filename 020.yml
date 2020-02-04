@@ -1,0 +1,9 @@
+---
+question: Which of the following operator is used for comparing ‘NULL’ values in SQL?
+
+answers:
+  - Equal
+  - IS
+  - IN
+  - None of Above
+correct: B

@@ -1,0 +1,21 @@
+---
+question: |-
+  Suppose you have a table “Loan_Records”.  
+
+  Borrower | Bank_Manager | Loan_Amount
+  -------------------------------------
+  Ramesh   | Sunderajan   | 10000.00
+  Suresh   | Ramgopal     | 5000.00
+  Mahesh   | Sunderajan   | 7000.00
+
+
+  SELECT Count(*)  FROM  ( (SELECT Borrower, Bank_Manager FROM   Loan_Records) AS S NATURAL JOIN (SELECT Bank_Manager, Loan_Amount FROM   Loan_Records) AS T );
+
+  What is the output of the following SQL query?
+
+answers:
+  - 4
+  - 5
+  - 8
+  - 10
+correct: B

@@ -1,0 +1,16 @@
+---
+question: |-
+  Which of the following statement(s) is/are true about “HAVING” and “WHERE” clause in SQL?
+
+  1- WHERE” is always used before “GROUP BY” and HAVING after “GROUP BY”
+  2- WHERE” is always used after “GROUP BY” and “HAVING” before “GROUP BY”
+  3- “WHERE” is used to filter rows but “HAVING” is used to filter groups
+  4- “WHERE” is used to filter groups but “HAVING” is used to filter rows
+  
+  Select the correct option:
+answers:
+  - 1 and 3
+  - 1 and 4
+  - 2 and 3
+  - 2 and 4
+correct: A

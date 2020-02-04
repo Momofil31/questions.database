@@ -1,0 +1,42 @@
+---
+question: |-
+  Suppose you have a csv file which has 3 columns (‘User_ID’, ‘Gender’, ‘Product_ID’) and 7,150,884 rows. You have created a table “train” from this file in SQL.
+
+  Now, you run Query 1 as given below and get the following output:
+
+  Query 1: EXPLAIN select * from train where Product_ID = 'P00370853';
+
+  OUTPUT:
+
+  QUERY PLAN
+  --------------------------------------------------------------
+  Seq Scan on train (cost=0.00..79723.88 rows=16428 width=68)
+  Filter: ((product_id)::text = 'P00370853'::text)
+  (2 rows)
+
+  You have now created Product_ID column as an index in train table using the below SQL query:
+
+  CREATE INDEX product_ID ON train(Product_ID)
+
+  And, you run Query 2 (same as Query 1) on “train” and get the following output.
+
+  Query 2: EXPLAIN select * from train where Product_ID = 'P00370853';
+
+  OUTPUT:
+
+  QUERY PLAN
+  -------------------------------------------------------------------------------
+  Bitmap Heap Scan on train (cost=829.53..40738.85 rows=35754 width=68)
+  Recheck Cond: ((product_id)::text = 'P00370853'::text)
+  -> Bitmap Index Scan on product_id (cost=0.00..820.59 rows=35754 width=0)
+  Index Cond: ((product_id)::text = 'P00370853'::text)
+  (4 rows)
+
+  
+  Which query will take less time to execute?
+answers:
+  - Query 1
+  - Query 2
+  - Both queries will take the same time
+  - Can’t say
+correct: B

@@ -1,0 +1,16 @@
+---
+question: |-
+  Consider a relation R with the schema R (A, B, C, D, E, F) with a set of functional dependencies F as follows:
+
+  {AB->C, BC->AD, D->E, CF->B}
+
+  Which of the following will be the output of DA+?
+
+  Note: For any X, X+ is closure of X.
+
+answers:
+  - DA
+  - DAE
+  - ABCD
+  - ABCDEF
+correct: B

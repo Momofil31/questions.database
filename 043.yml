@@ -1,0 +1,19 @@
+---
+question: |-
+  Suppose you have a table ‘Employee’. In Employee table, you have a column named Salary. Now, you applied Query1 on Employee table.
+
+  Query 1: SELECT * FROM Employee where Salary*100 > 5000;
+
+  After that, you created an index on Salary columns and then you re-run the Query 2 (same as Query 1).
+
+  Query 2:  SELECT * FROM Employee where Salary*100 > 5000;
+
+  Here, Query 1 is taking T1 time and Query 2 is taking T2 time.
+
+  Which of the following is true for the queries time?
+answers:
+  - T1 > T2
+  - T2 > T1
+  - T1 ~ T2
+  - Can’t say
+correct: C

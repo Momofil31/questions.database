@@ -1,0 +1,34 @@
+---
+question: |-
+  What will be the output of the below query?
+
+  Query: SELECT Company, AVG(Salary) FROM AV1 HAVING AVG(Salary) > 1200 GROUP BY Company WHERE Salary > 1000;
+
+  Name   | Salary |	Company | Designation
+  -------------------------------------------------
+  Saurav | 1000	  | AVl     | Junior Data Scientist
+  Ankit	 | 800	  | AV1     | Data Scientist
+  Sunil	 | 1200	  | AV2     | Senior Manager
+  Kunal	 | 1400	  | AV2     | CEO
+  Deepak | 1100	  | AV3     | Data Entry Operator
+  Swati	 | 1200	  | AV3     | BOE
+  Faizan | 900	  | AV1     | Deep Learning Expert
+
+answers:
+  - company | avg
+    ---------------
+    AV2     | 1300
+
+  - company | avg
+    ---------------
+    AV3     | 1150
+    AV2     | 1300
+
+  - company | avg
+    ---------------
+    AV3     | 1200
+    AV2     | 1300
+
+  - None of these
+
+correct: D

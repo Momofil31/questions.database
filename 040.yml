@@ -1,0 +1,12 @@
+---
+question: |-
+  If an index scan is replaced by sequential scan in SQL, then what will happen?
+
+  Note: Number of observations is equal to 1 million.
+answers:
+  - Execution will be faster
+  - Execution will be slower
+  - Execution will not be affected
+  - None of these
+
+correct: B

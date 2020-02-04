@@ -1,0 +1,32 @@
+---
+question: |-
+  STUDENT
+      Sid	  | name	 | login | age | gpa
+      53666	| Kayne	 | A@c   | 28	 | 4.0
+      53655	| Tupac	 | B@c   | 26	 | 3.5
+      53688	| Bieber | C@c   | 22	 | 3.9
+
+
+  ENROLLED
+      Sid	  | cid	   |grade
+      53666	| 15-415 | 	C
+      53688	| 15-721 |	A
+      53688	| 15-826 |	B
+      53655	| 15-415 |	C
+      53666	| 15-721 |	C
+
+
+    Consider the following queries:
+
+    Query1: select name from enrolled LEFT OUTER JOIN student on student.sid = enrolled.sid;
+    Query2: select name from student LEFT OUTER JOIN enrolled on student.sid = enrolled.sid;
+
+    Which of the following option is correct?
+
+answers:
+- Queries 1 and 2 will give the same results
+- Queries 1 and 2 will give different results
+- Query 1 will produce an error and Query 2 will run successfully
+- Query 2 will produce an error and Query 1 will run successfully
+
+correct: A

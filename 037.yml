@@ -1,0 +1,17 @@
+---
+question: |-
+  Consider the relation T1 (A, B) in which (A, B) is the primary key and the relation T2 (A, C) where A is the primary key. Assume there are no null values and no foreign keys or integrity constraints.
+
+  Now, which of the following option is correct related to following queries?
+
+  Query 1: select A from T1 where A in (select A from T2)
+
+  Query 2: select A from T2 where A in (select A from T1)
+
+answers:
+  - Both queries will definitely give the same result
+  - Both queries may give the same result
+  - Both queries will definitely give a different result
+  - None of these
+
+correct: B

@@ -1,0 +1,16 @@
+---
+question: |-
+  Which of the following statement(s) is/are true for UPDATE in SQL?
+
+  1- You can update only a single table using UPDATE command
+  2- You can update multiple tables using UPDATE command
+  3- In UPDATE command, you must list what columns to update with their new values (separated by commas).
+  4- To update multiple targeted records, you need to specify UPDATE command using the WHERE clause.
+
+  Select the correct option:
+answers:
+  - 1, 3 and 4
+  - 2, 3 and 4
+  - 3 and 4
+  - 1 only
+correct: A

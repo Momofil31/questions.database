@@ -1,0 +1,18 @@
+---
+question: |-
+  What is the difference between TRUNCATE, DELETE and DROP? Which of the following statement(s) is/ are correct?
+
+  1- DELETE operation can be rolled back but TRUNCATE and DROP operations cannot be rolled back.
+  2- DELETE operation cannot be rolled back but TRUNCATE and DROP operations can be rolled back.
+  3- DELETE is an example of DML (Data Manipulation Language) but remaining are the examples of DDL (Data Definition Language).
+  4- All are an example of DDL
+  
+  Select the correct option:
+
+answers:
+ - 1 and 3
+ - 2 and 3
+ - 1 and 4
+ - 2 and 4
+ - None of the above
+correct: A

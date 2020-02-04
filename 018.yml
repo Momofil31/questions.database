@@ -1,0 +1,9 @@
+---
+question: Which of the following statement is correct about ‘CREATE TABLE’ command while creating a table?
+
+answers:
+  - We need to assign a datatype to each column
+  - We have flexibility in SQL. We can assign a datatype to column even after creating a table
+  - It is mandatory to insert atleast a single row while creating a table
+  - None of these
+correct: A

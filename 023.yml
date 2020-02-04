@@ -1,0 +1,22 @@
+---
+question: |-
+  What are the tuples additionally deleted to preserve reference integrity when the rows (2,4) are deleted from the below table. Suppose you are using ‘ON DELETE CASCADE’.
+
+  A | C
+  -----
+  2 | 4
+  3 | 4
+  4 | 3
+  5 | 2
+  7 | 2
+  9 | 5
+  6 | 4
+
+  Note: We  have defined ‘Foreign Key’ and ‘Primary Key’ in a single table
+
+answers:
+  - (5,2) , (7,2), (9,5)
+  - (5,2) , (7,2)
+  - (5,2) , (7,2), (9,5), (3,4)
+  - (5,2) , (7,2), (9,5),(6,4)
+correct: A

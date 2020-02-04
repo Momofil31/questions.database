@@ -1,0 +1,9 @@
+---
+question: Which of the following is true for a primary key?
+answers:
+  - It can take a value more than once
+  - It can take null values
+  - It can’t take null values
+  - None of these
+
+correct: C

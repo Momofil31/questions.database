@@ -1,0 +1,24 @@
+---
+question: |-
+  What will be the output for the below query?
+
+  Query: SELECT Name from AV1 where Name LIKE '%______%';
+
+  Note: The above operation contains 6 underscores (‘_’) used with LIKE operator.
+
+  Name   | Salary |	Company | Designation
+  -------------------------------------------------
+  Saurav | 1000	  | AVl     | Junior Data Scientist
+  Ankit	 | 800	  | AV1     | Data Scientist
+  Sunil	 | 1200	  | AV2     | Senior Manager
+  Kunal	 | 1400	  | AV2     | CEO
+  Deepak | 1100	  | AV3     | Data Entry Operator
+  Swati	 | 1200	  | AV3     | BOE
+  Faizan | 900	  | AV1     | Deep Learning Expert
+
+answers:
+  - It will return names where number of characters in names are greater than or equals to 6
+  - It will return names where number of characters in names are greater than 6
+  - It will return names where number of characters in names are less than or equals to 6
+  - It will give an error
+correct: A
