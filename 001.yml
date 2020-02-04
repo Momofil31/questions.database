@@ -1,8 +1,0 @@
----
-question: Which of the following is the correct order of occurrence in a typical SQL statement?
-answers:
-    - select, group by, where, having
-    - select, where, group by, having
-    - select, where, having, group byselect, having, where, group by
-    - select, having, where, group by
-correct: B
