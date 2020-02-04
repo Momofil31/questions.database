@@ -1,27 +1,27 @@
 ---
 question: |-
-STUDENT
-  Sid	  | name	 | login | age | gpa
-  53666	| Kayne	 | A@c   | 28	 | 4.0
-  53655	| Tupac	 | B@c   | 26	 | 3.5
-  53688	| Bieber | C@c   | 22	 | 3.9
+    STUDENT
+      Sid	  | name	 | login | age | gpa
+      53666	| Kayne	 | A@c   | 28	 | 4.0
+      53655	| Tupac	 | B@c   | 26	 | 3.5
+      53688	| Bieber | C@c   | 22	 | 3.9
 
 
-ENROLLED
-  Sid	  | cid	   |grade
-  53666	| 15-415 | 	C
-  53688	| 15-721 |	A
-  53688	| 15-826 |	B
-  53655	| 15-415 |	C
-  53666	| 15-721 |	C
+    ENROLLED
+      Sid	  | cid	   |grade
+      53666	| 15-415 | 	C
+      53688	| 15-721 |	A
+      53688	| 15-826 |	B
+      53655	| 15-415 |	C
+      53666	| 15-721 |	C
 
 
-Which of the following is the correct outcome of the SQL query below?
-"Query: SELECT DISTINCT cid FROM ENROLLED WHERE grade = 'C'"
+    Which of the following is the correct outcome of the SQL query below?
+    "Query: SELECT DISTINCT cid FROM ENROLLED WHERE grade = 'C'"
 
 answers:
-- Extract the course ids where student receive the grade C in the course
-- Extract the Distinct course ids where student receive the grade of C in the course
-- Error
-- None of these
+    - Extract the course ids where student receive the grade C in the course
+    - Extract the Distinct course ids where student receive the grade of C in the course
+    - Error
+    - None of these
 correct: B
