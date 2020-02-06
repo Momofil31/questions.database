@@ -8,16 +8,6 @@ question: |-
 
   Now, which of the following query would be able to find the unique names of all students having score more than 90% in the courseno 107?
 
-  Name   | Salary |	Company | Designation
-  -------------------------------------------------
-  Saurav | 1000	  | AVl     | Junior Data Scientist
-  Ankit	 | 800	  | AV1     | Data Scientist
-  Sunil	 | 1200	  | AV2     | Senior Manager
-  Kunal	 | 1400	  | AV2     | CEO
-  Deepak | 1100	  | AV3     | Data Entry Operator
-  Swati	 | 1200	  | AV3     | BOE
-  Faizan | 900	  | AV1     | Deep Learning Expert
-
 answers:
   - SELECT DISTINCT S.sname FROM Students as S, Registration as R WHERE R.rollno=S.rollno AND R.courseno=107 AND R.percent >90
   - SELECT UNIQUE S.sname FROM Students as S, Registration as R WHERE R.rollno=S.rollno AND R.courseno=107 AND R.percent >90
